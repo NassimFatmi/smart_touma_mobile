@@ -1,0 +1,82 @@
+{
+  "project_info": {
+    "project_number": "659819478163",
+    "project_id": "smart-touma",
+    "storage_bucket": "smart-touma.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:659819478163:android:58270fdc4dc4e9a63ba166",
+        "android_client_info": {
+          "package_name": "com.nassimfatmi.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "659819478163-6u3krnb4c4qsa7nhd1p0qf874nn3i208.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAs83D6AyZt36-zFm40DlzFxV5V8obZBXM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "659819478163-6u3krnb4c4qsa7nhd1p0qf874nn3i208.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "659819478163-vbg4vs7m98mltlloicd37hntaikee31t.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.smartTouma"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:659819478163:android:2d116abee7aa8f013ba166",
+        "android_client_info": {
+          "package_name": "com.nassimfatmi.smart_touma_mobile"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "659819478163-6u3krnb4c4qsa7nhd1p0qf874nn3i208.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAs83D6AyZt36-zFm40DlzFxV5V8obZBXM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "659819478163-6u3krnb4c4qsa7nhd1p0qf874nn3i208.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "659819478163-vbg4vs7m98mltlloicd37hntaikee31t.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.smartTouma"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
