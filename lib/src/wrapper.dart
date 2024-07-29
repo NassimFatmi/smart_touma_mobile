@@ -1,7 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:smart_touma_mobile/src/screens/authentication/login_screen.dart';
-import 'package:smart_touma_mobile/src/screens/home/home_screen.dart';
+import 'package:smart_touma_mobile/src/screens/main_screen.dart';
 import 'package:smart_touma_mobile/src/screens/utils/loading_screen.dart';
 
 class Wrapper extends StatelessWidget {
@@ -15,7 +15,7 @@ class Wrapper extends StatelessWidget {
           if (snapshot.connectionState == ConnectionState.waiting) {
             return const LoadingScreen();
           } else if (snapshot.hasData) {
-            return const HomeScreen();
+            return const MainScreen();
           } else {
             return const LoginScreen();
           }

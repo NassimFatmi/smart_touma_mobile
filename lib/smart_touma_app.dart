@@ -3,7 +3,6 @@ import 'package:provider/provider.dart';
 import 'package:smart_touma_mobile/src/providers.dart';
 import 'package:smart_touma_mobile/src/routes.dart';
 import 'package:smart_touma_mobile/src/wrapper.dart';
-import 'package:smart_touma_mobile/theme/app_theme.dart';
 
 class SmartToumaApp extends StatelessWidget {
   const SmartToumaApp({super.key});
@@ -13,10 +12,12 @@ class SmartToumaApp extends StatelessWidget {
     return MultiProvider(
       providers: Providers.providers,
       child: MaterialApp(
-        title: 'Flutter Mobile Application',
-        theme: AppTheme.themeData,
+        themeMode: ThemeMode.system,
+        debugShowCheckedModeBanner: false,
+        title: 'Smart Touma',
         home: const Wrapper(),
         routes: Routes.routes,
+        theme: ThemeData(useMaterial3: true),
       ),
     );
   }

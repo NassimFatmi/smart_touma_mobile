@@ -24,7 +24,10 @@ class _LoginScreenState extends State<LoginScreen> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            const Text('Login Screen'),
+            Text(
+              'Login Screen',
+              style: Theme.of(context).textTheme.headlineLarge,
+            ),
             const SizedBox(height: 20),
             ElevatedButton.icon(
               onPressed: _loginWithGoogle,
