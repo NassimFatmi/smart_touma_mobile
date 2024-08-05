@@ -10,11 +10,10 @@ class LoginScreen extends StatefulWidget {
 }
 
 class _LoginScreenState extends State<LoginScreen> {
-  late final AuthService _authService = AuthService();
+  final AuthService _authService = AuthService();
 
   void _loginWithGoogle() async {
-    final userCredentials = await _authService.signInWithGoogle();
-    print(userCredentials);
+    await _authService.signInWithGoogle();
   }
 
   @override

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:smart_touma_mobile/src/screens/categories/categories_screen.dart';
 import 'package:smart_touma_mobile/src/screens/home/home_screen.dart';
+import 'package:smart_touma_mobile/src/screens/profile/profile_screen.dart';
 import 'package:smart_touma_mobile/src/services/auth_service.dart';
 
 class MainScreen extends StatefulWidget {
@@ -12,7 +14,6 @@ class MainScreen extends StatefulWidget {
 
 class _MainScreenState extends State<MainScreen> {
   final AuthService _authService = AuthService();
-
   int selectedIndex = 0;
 
   void onItemTapped(int index) {
@@ -26,12 +27,13 @@ class _MainScreenState extends State<MainScreen> {
   }
 
   @override
+  void initState() {
+    super.initState();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
-      floatingActionButton: FloatingActionButton(
-        onPressed: logout,
-        child: const FaIcon(FontAwesomeIcons.rightFromBracket),
-      ),
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: selectedIndex,
         onTap: onItemTapped,
@@ -49,7 +51,7 @@ class _MainScreenState extends State<MainScreen> {
             icon: FaIcon(
               FontAwesomeIcons.gear,
             ),
-            label: 'Settings',
+            label: 'Categories',
           ),
           BottomNavigationBarItem(
             icon: FaIcon(
@@ -61,14 +63,10 @@ class _MainScreenState extends State<MainScreen> {
       ),
       body: IndexedStack(
         index: selectedIndex,
-        children: const [
-          HomeScreen(),
-          Center(
-            child: Text('Settings Screen'),
-          ),
-          Center(
-            child: Text('Profile Screen'),
-          ),
+        children: [
+          const HomeScreen(),
+          const CategoriesScreen(),
+          ProfileScreen(),
         ],
       ),
     );

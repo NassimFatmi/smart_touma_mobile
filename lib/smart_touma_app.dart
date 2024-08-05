@@ -15,7 +15,7 @@ class SmartToumaApp extends StatelessWidget {
         themeMode: ThemeMode.system,
         debugShowCheckedModeBanner: false,
         title: 'Smart Touma',
-        home: const Wrapper(),
+        home: Wrapper(),
         routes: Routes.routes,
         theme: ThemeData(useMaterial3: true),
       ),
